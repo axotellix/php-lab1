@@ -1,0 +1,16 @@
+
+// [ ENTRANCE ]
+section.entrance {
+    h1.title { margin-top: -10rem; }
+
+    a.sign-up { 
+        color: $orange; 
+        font-size: 1.3rem;
+        font-weight: $f-bold;
+        text-align: center;
+        margin-top: 20px; 
+        transition: color 0.25s;
+
+        &:hover { color: lighten($orange, 10%); }
+    }
+}

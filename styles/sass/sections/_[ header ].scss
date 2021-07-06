@@ -1,0 +1,44 @@
+
+// [ HEADER ]
+header {
+    width: 100%; height: 30vw;
+    background: $white;
+    box-sizing: content-box;
+    padding: 20px 0;
+    @include flex-align;
+}
+
+div.header-back, div.header-form {
+    height: 100%;
+    flex-grow: 1;
+    @include flex-align;
+}
+
+// [ header: background image ]
+div.header-back {
+    flex-basis: 10px;
+
+    svg.picture {
+        min-height: 80%;
+        margin-top: -20px;
+    }
+}
+// [ header: form ]
+div.header-form {
+    flex-basis: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    h1.header-title {
+        color: $green;
+        font-size: 3.5rem;
+        margin-top: -10px;
+        margin-bottom: 1.2em;
+
+        span {
+            color: $grey;
+            font-size: 1.5rem;
+            display: block;
+        }
+    }
+}
